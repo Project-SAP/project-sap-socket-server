@@ -1,0 +1,30 @@
+{
+  "name": "project-sap-socket-server",
+  "description": "Socket server piece for project",
+  "version": "1.0.0",
+  "main": "dist/main.js",
+  "scripts": {
+    "build": "tsc",
+    "prestart": "npm run build",
+    "start": "nodemon ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Project-SAP/project-sap-socket-server.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Project-SAP/project-sap-socket-server/issues"
+  },
+  "homepage": "https://github.com/Project-SAP/project-sap-socket-server#readme",
+  "dependencies": {
+    "@types/express": "^4.17.14",
+    "concurrently": "^7.5.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "nodemon": "^2.0.20",
+    "socket.io": "^4.5.3"
+  }
+}
