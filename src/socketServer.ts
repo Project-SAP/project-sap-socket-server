@@ -10,7 +10,7 @@ import { Server as SocketServer } from 'socket.io';
  *
  * Not all fields or methods should be exposed as the application context. If a field is not marked as `private`, document the reason.
  */
-export class socketServer {
+export class ApplicationSocketServer {
     private readonly serverContext: HTTPServer;
 
     private readonly port: string;
@@ -34,9 +34,9 @@ export class socketServer {
     }
 
     /**
-     * Not private since tests will be required to confiugre their own instance of a @type {serverApplication}
+     * Not private since tests will be required to confiugre their own instance of a @type {ApplicationSocketServer}
      * @param httpServer HTTP server where socket server will be attached
-     * @returns expressJs context
+     * @returns HTTP Server context
      */
     socketServerInit(httpServer: HTTPServer): SocketServer {
         const FRONTEND_URL = process.env.FRONTEND_URL || "http://localhost:3000";

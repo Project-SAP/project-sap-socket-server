@@ -1,3 +1,3 @@
-import { socketServer } from "./socketServer";
+import { ApplicationSocketServer } from "./socketServer";
 
-const server = new socketServer();
+const server = new ApplicationSocketServer();
